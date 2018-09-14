@@ -14,6 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.manifest.moviemanager.R;
+import com.example.manifest.moviemanager.fragments.NowPlayingFragment;
+import com.example.manifest.moviemanager.fragments.UpcomingFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -82,9 +84,14 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        Class fragment = null;
+
         if (id == R.id.nav_now_playing) {
-            // Handle the camera action
+            fragment = NowPlayingFragment.class;
+            showFragment(fragment);
         } else if (id == R.id.nav_upcoming) {
+            fragment = UpcomingFragment.class;
+            showFragment(fragment);
 
         } else if (id == R.id.nav_logout) {
 
@@ -93,5 +100,9 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void showFragment(Class fragment) {
+
     }
 }
