@@ -6,4 +6,8 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="nav_now_playing">Now Playing</string>
+    <string name="nav_upcoming">Upcoming</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_logout">Logout</string>
 </resources>
