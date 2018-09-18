@@ -23,8 +23,8 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:collapsedTitleTextAppearance="@style/TextAppearance.Design.CollapsingToolbar.Expanded.Shadow"
-            app:expandedTitleMarginEnd="64dp"
-            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="@dimen/title_margin_end"
+            app:expandedTitleMarginStart="@dimen/title_margin_start"
             app:toolbarId="@+id/toolbar">
 
             <ImageView
@@ -55,6 +55,6 @@
         android:layout_margin="@dimen/fab_margin"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@drawable/ic_favorite"/>
+        android:src="@drawable/ic_favorite"/>
 
 </android.support.design.widget.CoordinatorLayout>
