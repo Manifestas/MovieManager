@@ -26,7 +26,7 @@ public class NowPlayingFragment extends Fragment {
 
     List<Movie> movies;
 
-    @BindView(R.id.rwMovies)
+    @BindView(R.id.rvMovies)
     RecyclerView rvMovies;
 
 
